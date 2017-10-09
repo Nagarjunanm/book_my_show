@@ -1,0 +1,245 @@
+@CHARSET "ISO-8859-1";
+ 
+            body{
+                background-color:rgb(244,244,244);
+            }
+            .nav li a:hover{
+                color: red;
+            }
+            .col-lg-1 a,.col-lg-2 a {
+                color:darkturquoise;
+                font-size-adjust: 16;
+
+            }
+            #titl{
+                //font-size:40px;
+                //font-size:100%;
+                color:whitesmoke;
+            }
+            .foter {
+                background:rgb(51,51,56);
+                margin-top:120px;
+                position:relative;
+            }
+            .foter .container {
+                // padding:60px 0 20px;
+            }
+            .foter ul {
+                margin:0 auto;
+                margin-bottom:30px;
+                margin-top:10px;
+                text-align:center;
+                list-style-type:none;
+                padding-left:0;
+            }
+            .foter ul li {
+                display:inline-block;
+                text-align:center;
+                background:rgba(0,0,0,0.2);
+                color:#ffffff;
+                line-height:45px;
+                margin:0 4px 0px;
+                width:45px !important;
+                height:45px !important;
+                -webkit-border-radius:3px;
+                border-radius:3px;
+            }
+            .foter ul li:hover {
+                background:#2a2a2a;
+            }
+            .foter ul li:hover a {
+                color:#fff;
+            }
+            .foter ul li a {
+                color:#fff;
+                width:42px !important;
+                height:42px !important;
+            }
+            .foter ul li a i {
+                line-height:45px;
+                color:#fff;
+            }
+            .foter p {
+                color:#fff;
+                font-size:12px;
+                line-height:24px;
+                font-weight:300;
+                text-align:center;
+                //text-transform:uppercase;
+            }
+
+            .top {
+                display:inline-block;
+                width:60px;
+                height:60px;
+                background:#05070A;
+                position:absolute;
+                margin-left:-30px;
+                top:-35px;
+                border-radius:50%;
+            }
+            .top i {
+                color:#cc580c;
+                line-height:70px;
+            }
+            .foter a,.foter a:hover {
+                color:#fff;
+            }
+
+            .navbar-wrapper {
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 10;
+                text-align: center;
+				background: transparent;
+            }
+
+
+            /* CUSTOMIZE THE CAROUSEL
+            -------------------------------------------------- */
+
+            /* Carousel base class */
+            .carousel {
+                margin-bottom: 60px;
+            }
+            /* Since positioning the image, we need to help out the caption */
+            .carousel-caption {
+                z-index: 0;
+            }
+
+            /* Declare heights because of positioning of img element */
+            .carousel .item {
+                //height: 720px !important;
+                background-color:#555;
+            }
+            .carousel img {
+                position: relative;
+                top: 0;
+                left: 0;
+                max-height: 450px !important;
+                width :100%
+            }
+
+
+
+
+
+            /* RESPONSIVE CSS
+            -------------------------------------------------- */
+
+            @media (min-width: 768px) {
+
+
+                /* Navbar positioning foo */
+                .navbar-wrapper {
+                    margin-top: 0px;
+                    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+                }
+                /* The navbar becomes detached from the top, so we round the corners */
+                .navbar-wrapper .navbar {
+                    border-radius: 4px;
+                }
+
+                /* Bump up size of carousel content */
+                .carousel-caption p {
+                    margin-bottom: 20px;
+                    font-size: 21px;
+                    line-height: 1.4\\;
+                }
+
+            }
+            @media (max-width: 500px){
+                #nav li a{
+                    border-bottom: 1px solid white;
+                }
+
+            } 
+            #shree{        //color:whitesmoke;  
+                           text-align:center;
+
+                           font-size: 4.9vh;
+
+
+            }
+            #shree3{        //color:whitesmoke;  
+                            text-align:center;
+
+                            font-size: 3.3vw;
+
+
+            }
+            #shree4{        //color:whitesmoke;  
+                            text-align:center;
+
+
+
+            }
+            #shree1{        color:whitesmoke;  
+                            text-align:center;}
+
+            .f-nav{  
+                z-index: 9999;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                background-color: transparent;
+            }
+
+            #nav li a {
+                //border-top: 1px solid white;
+                color: darkorange;
+            }
+
+            #nav li a:hover{
+                //background-color: gray;
+                -webkit-transition-delay: 0.2s; /* Safari */
+                transition-delay: 0.2s;
+
+                border-radius: 6px;
+                color: gold;
+            }
+            #main {
+                background-color: transparent;
+            }
+            .fav2 {
+                background-color: black;
+                //border-radius: 6px;
+                //color: cyan;
+            }
+
+            .fav3 {
+                //background-color: black;
+                //border-radius: 6px;
+                color: cyan;
+            }
+
+            .block{
+                border: 1px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .circle {
+                background: black;
+                border-radius:50%;
+                color: darkorange;
+                display:table;
+                height:250px;
+                //font-weight: bold;
+                font-size: small;
+                width: 250px;
+                margin:0 auto;
+            }
+            .circle span {
+                display:table-cell;
+                vertical-align:middle;
+                height:200px;
+                width:200px;
+                text-align:center;
+                padding: 0 15px;
+            }
+
+
+        

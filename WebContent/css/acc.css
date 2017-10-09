@@ -1,0 +1,296 @@
+@CHARSET "ISO-8859-1";
+body{
+                background-color: rgb(244,244,244);
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            .colls {
+                float: left;
+                width: 25%;
+                padding: 05px;
+            }
+
+            .prc {
+                list-style-type: none;
+                border: 0px solid #eee;
+                margin: 0;
+                padding: 0;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+            }
+
+            .prc:hover {
+                box-shadow: 0 8px 12px 0 black;
+            }
+
+            .prc .header {
+                background-color: rgb(51,51,56);
+                color: whitesmoke;
+                font-size: 14px;
+            }
+
+            .prc li {
+                border-bottom: 1px solid lightslategrey;
+                padding: 15px;
+                text-align: center;
+                color:darkorange;
+                font-weight: bold;
+                background-color: rgb(51,51,56);
+            }
+
+            .prc .grey {
+                background-color: white;
+                font-size: 14px;
+                color:darkorange;
+
+            }
+
+            .button {
+                background-color: green;
+                border-radius:  5px;
+                color: white;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .colls {
+                    width: 100%;
+                }
+            }
+
+            #nav li a {
+
+                color: darkorange;
+            }
+
+            #nav li a:hover{
+                background-color: gray;
+                border-radius: 6px;
+                color: gold;
+            }
+            #main {
+                background-color: transparent;
+            }
+            .fav2 {
+               // background-color: aqua;
+                //border-radius: 6px;
+                //color: cyan;
+            }
+
+            .fav3 {
+                //background-color: black;
+                //border-radius: 6px;
+                color: cyan;
+            }
+
+            .f-nav{  
+                z-index: 9999;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                background-color: transparent;
+            }
+
+
+
+
+
+
+
+            .book-header{
+                color:#2b97f2;
+                font-weight: bold;
+
+            }
+
+            .col-lg-1 a,.col-lg-2 a{
+                color:#05060A;
+                font-weight: bold;
+
+
+            }
+            col-lg-1 a:hover,.col-lg-2 a:hover{
+                color:wheat;
+
+            }
+
+            .nav li a:hover{
+                color:#05060A;
+            }
+
+
+            
+
+            .images {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .images:hover {opacity: 0.7;}
+
+            /* The Modal (background) */
+            .modl {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color:#05070A;/* Fallback color */
+                //opacity :0.9; /* Black w/ opacity */
+            }
+
+            /* Modal Content (image) */
+            .modl-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+
+            /* Caption of Modal Image */
+            .cap {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: gold;
+                padding: 8px;
+                height: 150px;
+            }
+
+            /* Add Animation */
+            .modl-content, .cap {
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+
+            @-webkit-keyframes zoom {
+                from {-webkit-transform:scale(0)}
+                to {-webkit-transform:scale(1)}
+            }
+
+            @keyframes zoom {
+                from {transform:scale(0)}
+                to {transform:scale(1)}
+            }
+
+            /* The Close Button */
+            .cls {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .cls:hover,
+            .cls:focus {
+                color: orange;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* 100% Image Width on Smaller Screens */
+            @media only screen and (max-width: 700px){
+                .modl-content {
+                    width: 100%;
+                }
+            }
+            #nam{color:gold;}
+
+            body {
+                //padding-bottom: 40px;
+                color: #5a5a5a;
+            }
+
+            /*.overlay { 
+              color:#fff;
+              position:absolute;
+              z-index:12;
+              top:50%;
+              left:0;
+              width:100%;
+              text-align:center;
+            }*/
+
+
+            /* CUSTOMIZE THE NAVBAR
+            -------------------------------------------------- */
+
+            /* Special class on .container surrounding .navbar, used for positioning it into place. */
+            .navbar-wrapper {
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 10;
+            }
+
+
+
+            /* CUSTOMIZE THE CAROUSEL
+            -------------------------------------------------- */
+
+            /* Carousel base class */
+            .carousel {
+                margin-bottom: 60px;
+            }
+            /* Since positioning the image, we need to help out the caption */
+            .carousel-caption {
+                z-index: 1;
+            }
+
+            /* Declare heights because of positioning of img element */
+            .carousel .item {
+                //height: 720px !important;
+                background-color:#555;
+            }
+            .carousel img {
+                position: relative;
+                top: 0;
+                left: 0;
+                min-height: 350px !important;
+            }
+
+
+
+
+
+            /* RESPONSIVE CSS
+            -------------------------------------------------- */
+
+            @media (min-width: 768px) {
+
+                /* Navbar positioning foo */
+                .navbar-wrapper {
+                    margin-top: 20px;
+                    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+                }
+                /* The navbar becomes detached from the top, so we round the corners */
+                .navbar-wrapper .navbar {
+                    border-radius: 4px;
+                }
+
+                /* Bump up size of carousel content */
+                .carousel-caption p {
+                    margin-bottom: 20px;
+                    font-size: 21px;
+                    line-height: 1.4;
+                }
+            }
